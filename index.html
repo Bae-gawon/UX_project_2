@@ -14,16 +14,16 @@
     	header{width: 100%; height: 1150px; margin-bottom: 100px}
  		header img{display: block; width: 100%; position: absolute;}
  		header .title{position: absolute; top:0; left: 0; width: 650px;}
-		header .text1{text-align: left; position: absolute; top: 740px; left: 50%; right: 18.75%;}
-		footer{background: #505050; height: 200px; padding-top: 20px; padding-left: 50px}
+		header .text1{text-align: left; position: absolute; top: 700px; left: 50%; right: 18.75%;}
+		footer{background: #505050; padding-bottom: 150px;}
 		.row{width: 1200px; margin: auto; padding: 100px;}
 		.white{color: white;}
 		.gray{color: #808285;}
 		.bg-gray{background: #505050;}
 		.bg-black{background: black;}
 
-		.button{float: left; width: 44%; border-radius: 50px; border: 0.5px solid black; text-align: center; padding: 7px; margin: 1%;}
-		.button:hover{background:#8d0000;border: 0.5px solid #8d0000; color: white;}
+		.button{float: left; width: 44%; border-radius: 50px; border: 0.5px solid black; text-align: center; padding: 7px; margin: 1%; cursor: pointer;}
+		.buy:hover{background:#8d0000;border: 0.5px solid #8d0000; color: white; }
 
 		.font1{font-size: 2em; letter-spacing: -2px; word-spacing: 1px; word-break: keep-all; line-height: 1.5}
 		.font2{font-size: 1.3em; letter-spacing: -2px; word-spacing: 1px;  line-height: 2; word-break: keep-all;}
@@ -36,13 +36,15 @@
 		.right{text-align: right;}
 		
 		.type{width: 100%}
-		.pic{width: 100%; margin-top: 44px;}
-		.pic-ver{float:right; width: 30%; margin-left: 44px;}
+		.pic{width: 100%; margin-top: 30px;}
+		.pic-ver{float:right; width: 30%; margin-left: 30px;}
 
 		.container1{display: flex; text-align: center;}
-		.col-p{padding-left: 30px; padding-right: 30px; }
+		.col{margin: 10px}
+		.col-p{padding-left: 10px; padding-right: 10px; }
 		.op{opacity: 70%}
 		
+
 		.container2{display: flex; text-align: left;}
 		.col2{width: 50%; padding: 50px}
 
@@ -52,38 +54,44 @@
 		.container3{display: flex; text-align: left;}
 		.col3{padding: 10px}
 		
-		.way{height: 150px; margin-top: 44px; margin-bottom: 44px;  padding-left: 50px; padding-top: 250px}
+		.way{height: 150px; margin-top: 30px; margin-bottom: 30px;  padding-left: 50px; padding-top: 250px}
 		.way_bg1{background: url('way1.png');}
 		.way_bg2{background: url('way2.png');}
 		.way_bg3{background: url('way3.png');}
 
 		.sub{width: 300px; background: url('ink.png'); background-repeat: no-repeat;  padding: 50px; text-align: center; padding-top:200px;}
+
 		ul{list-style-type: none;}
 		li{float: left; padding-left: 140px; padding-top:10px;}
 		.info{height: 60px;background: #f4f4f7;}
 		.board{height: 300px}
+
 		nav .menu{height: 60px;  padding: 10px;}
 		nav li{padding: 10px;  float: left; height: 60px; width: 30%;}
 		a{width: 100%; text-decoration: none;}
 		a:link, a:visited{color: #505050; display: inline-block; border-top: 0.5px solid  #505050; padding: 10px;}
 		nav a:hover, nav a:active{background-color: #505050; color: white; border-radius: 50px;}
-		.top{margin-top:100px;margin-bottom:100px;}
+
+		.top{position: fixed; right:0px; bottom: 30px; background: white; border-radius: 50px 0px 0px 50px }
+
+		.shop{padding-left: 0px;}
+		.footer-p{padding-left:50px;}
 
 	</style>
 </head>
 <body>
 	
 	<header>
-		<div class="main" id="top">
+		<div id="top">
 		<img src="main.png">
 		<img class="title" src="main_title.png">
 		<div class="text1 font2">
-			<p>집에서도 즐길 수 있는 전통주와 막걸리</p>
+			<p >집에서도 즐길 수 있는 전통주와 막걸리</p>
 			<br>
 			<p class="gray">오늘 하루 수고한 당신이 술잔을 기울일 때, 단아하지만 특징적인 백자 주병과 술잔으로 구성된 이 주모 세트로 더욱 달달한 술맛을 느낄 수 있다.</p>
 			<br><br>
 			<div class="button">장바구니</div>
-			<div class="button bg-black white">구매하기</div>
+			<div class="button bg-black white buy">구매하기</div>
 		</div>
 	</header>
 	<nav>
@@ -234,17 +242,19 @@
 		</div>
 			<p class="font3 right"> 전자레인지/오븐 사용 불가<br>
 				식기세척기 사용 가능</p>
-		
-		<div class="center top"><a href="#top">맨 위로 가기</a></div>
 		</div>
+	<div class="center top op"><a href="#top">맨 위로 가기&nbsp;</a></div>
+		
 	</section>
 	<footer>
+		<div class="row">
 			<ul>
-		<li class="name white">The Jumag shop<br>
-		<p class="font5 white">주막샵</p></li>
-		<li class="font4 white op">주식회사 &nbsp;&nbsp;주막샵<br>대표이사 &nbsp;&nbsp;18100858 배가원<br><br> copyright&copy;Bae Gawon</li>
-		<li class="font4 white op">고객센터 &nbsp;&nbsp;010 5465 3076</li>
+		<li class="name white shop">The Jumag shop<br>
+		<p class="font5 white shop">주막샵</p></li>
+		<li class="font4 white op">주식회사 &nbsp;&nbsp;주막샵<br>대표이사 &nbsp;&nbsp;18100858 배가원<br>주소 &nbsp;&nbsp;서울특별시 노원구 공릉로<br> &copy; since 2020 Bae Gawon, All Rights Reserved.</li>
+		<li class="font4 white op footer-p">고객센터 &nbsp;&nbsp;010 5465 3076<br><br>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 <br>쇼핑몰에서 가입한 구매안전서비스를 이용하실 수 있습니다.</li>
 			</ul>
+		</div>
 	</footer>
 
 </body>
